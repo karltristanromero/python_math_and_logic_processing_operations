@@ -7,3 +7,7 @@
     print product
     
 '''
+first_number = float(input("Enter the multiplicand: "))
+second_number = float(input("Enter the multiplier: "))
+
+print(f"Product: {first_number * second_number}")
