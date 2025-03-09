@@ -9,6 +9,8 @@
 dividend = float(input("Enter the dividend: "))
 divisor = float(input("Enter the divisor: "))
 
-quotient = dividend / divisor
-
-print(f"The quotient of {dividend} ÷ {divisor} is {quotient}")
+try:
+    quotient = dividend / divisor
+    print(f"The quotient of {dividend} ÷ {divisor} is {quotient}")
+except ZeroDivisionError:
+    print("You cannot divide by zero!")
