@@ -6,3 +6,10 @@
     print the result
 
 '''
+
+first_number = float(input("Enter the base to be raised: "))
+second_number = float(input("Enter the exponent: "))
+
+result = first_number ** second_number
+
+print(f"The result of raising {first_number} to {second_number} is {result}.")
