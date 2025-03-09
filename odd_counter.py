@@ -10,6 +10,8 @@
 
 odd_counter = 0
 
+print("\n Enter 10 numbers to start!!")
+
 for i in range(10):
     num = float(input(f"({i+1}) Enter a number: "))
     if num % 2 != 0:
