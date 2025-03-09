@@ -7,7 +7,7 @@
 
 '''
 
-first_number = float(input("Enter the first number: "))
-second_number = float(input("Enter the second number: "))
+first_number = float(input("Enter the first addend: "))
+second_number = float(input("Enter the second addend: "))
 
 print(f"The sum of the two numbers is: {first_number + second_number}")
