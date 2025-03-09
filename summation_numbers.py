@@ -7,3 +7,11 @@
         add number to sum
 
 '''
+
+sum = 0
+
+for i in range(10):
+    addend = float(input(f"({i + 1}) Enter an addend: "))
+    sum += addend
+
+print(f"Summing it all up, you get: {sum}!!")
