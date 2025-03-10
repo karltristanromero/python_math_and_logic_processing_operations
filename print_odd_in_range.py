@@ -10,7 +10,7 @@
 
 num = 0
 
-while num <= 100:
+while num in range(0, 101):
     if num % 2 != 0:
         print(num, end=" " )
     num += 1
