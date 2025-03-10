@@ -4,3 +4,9 @@
     for num between range of lower and upper boudnaries:
         print num
 '''
+
+lower_boundary = int(input("Enter the lower boundary: "))
+upper_boundary = int(input("Enter the upper boundary: "))
+
+for num in range(lower_boundary + 1, upper_boundary):
+    print(num, end=" ")
