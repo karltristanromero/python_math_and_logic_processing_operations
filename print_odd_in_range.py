@@ -5,5 +5,10 @@
 
     while range_counter >= 100
         if num is odd
-            add + 1 o odd_counter
+            add + 1 to odd_counter
+            add + 1 to range_counter
 '''
+
+range_counter = 0
+odd_counter = 0
+
