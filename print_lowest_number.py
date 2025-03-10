@@ -2,9 +2,9 @@
 '''
     set lowest_number to None
     while loop
-        input num
-        try-except
-            if num is still None
+        try except
+            input num
+            if lowest_number is still None
                 set lowest_number into num's value
             elif num is less than lowest_number
                 change lowest number's value with num's
@@ -16,3 +16,17 @@
 '''
 
 lowest_number = None
+
+while True:
+    try:
+        num = float(input("Enter a number: "))
+        
+        if lowest_number == None:
+            lowest_number = num
+        elif num < lowest_number:
+            lowest_number = num
+
+    except ValueError:
+        break
+
+print(f"The lowest number you have entered is: {lowest_number}")
