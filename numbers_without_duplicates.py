@@ -8,20 +8,24 @@
             pop the number from list of number
     print(list of numbers)
 
-
-idea: use enumerate function and use the dictionary to store how many values were counted
-
 '''
-num_history = []
-num_no_duplicates = []
+list_of_num = []
 
 for i in range(10):
-    number = input(f"({i + 1}) Enter a number: ")
+    num_input = input(f"({i + 1}) Enter a number: ")
+    list_of_num.append(num_input)
 
-    if number in num_history:
-        num_no_duplicates.remove(number)
-    else:
-        num_no_duplicates.append(number)
-        num_history.append(number)
+num_without_dupli = []
+duplicates = []
 
-print(f"The numbers without duplicates are: {', '.join(num_history)}")
+for num in list_of_num:
+
+    if num not in num_without_dupli and num not in duplicates:
+        num_without_dupli.append(num)
+
+    elif num in num_without_dupli:
+        num_without_dupli.remove(num)
+        duplicates.append(num)
+
+
+print(f"The numbers without duplicates are: {' '.join(num_without_dupli)}")
