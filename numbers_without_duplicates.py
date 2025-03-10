@@ -9,3 +9,13 @@
     print(list of numbers)
 
 '''
+list_of_numbers = []
+
+for i in range(10):
+    number = float(input(f"({i + 1}) Enter a number: "))
+    if number in list_of_numbers:
+        list_of_numbers.remove(number)
+    else:
+        list_of_numbers.append(number)
+
+print(list_of_numbers)
