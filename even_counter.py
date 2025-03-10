@@ -6,3 +6,12 @@
             add 1 to even
     print even counter
 '''
+
+even_counter = 0
+
+for i in range(10):
+    num = float(input("Enter a number: "))
+    if num % 2 == 0:
+        even_counter += 1
+
+print(even_counter)
