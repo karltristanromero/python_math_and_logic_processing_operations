@@ -8,6 +8,20 @@
         except valueerror
             break
     
-    sort list_num and store in sortetd_list
-    print sorted_list
+    sort list_num
+    print list_num
 '''
+
+list_num = []
+
+while True:
+    try:
+        number = float(input("Enter a number: "))
+        list_num.append(number)
+    except ValueError:
+        print("Printing results...")
+        break
+
+list_num.sort()
+
+print(f"\nSorted numbers: {list_num}")
