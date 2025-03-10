@@ -12,7 +12,7 @@
 list_of_numbers = []
 
 for i in range(10):
-    number = float(input(f"({i + 1}) Enter a number: "))
+    number = input(f"({i + 1}) Enter a number: ")
     if number in list_of_numbers:
         list_of_numbers.remove(number)
     else:
@@ -20,4 +20,4 @@ for i in range(10):
 
 
 
-print(f"The numbers without duplicates are: {list_of_numbers}")
+print(f"The numbers without duplicates are: {', '.join(list_of_numbers)}")
