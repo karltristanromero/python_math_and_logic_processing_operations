@@ -1,14 +1,15 @@
 # Prog08: Create a program that print all the odd numbers starting from 0 to 100. (Use while loop)
 '''
-    set range_counter
-    set odd_counter
+    set num
 
-    while range_counter >= 100
+    while num <= 100
         if num is odd
-            add + 1 to odd_counter
-            add + 1 to range_counter
+            print(num)
+        add + 1 to range_counter
 '''
 
 range_counter = 0
-odd_counter = 0
 
+while range_counter <= 100:
+    if range_counter % 2 != 0:
+        print(range_counter)
