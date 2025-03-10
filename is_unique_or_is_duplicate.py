@@ -6,14 +6,26 @@
     set list_num
     while loop
         input number
-        append number to list_num
 
-        try-except
-            if number in list_num
-                print duplicate
-            else
-                print unique
-        except Type Error
+        if number in list_num
+            print duplicate
+        elif not in list_num
+            append number to list_num
+            print unique
+        else: 
             break loop
 
 '''
+
+list_numbers = []
+
+while True:
+    number = float(input("Enter a number: "))
+    try:
+        if number in list_numbers:
+            print(f"{number} is a DUPLICATE!")
+        else:
+            list_numbers.append(number)
+            print(f"{number} is UNIQUE!")
+    except ValueError:
+        break
