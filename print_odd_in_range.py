@@ -8,8 +8,9 @@
         add + 1 to range_counter
 '''
 
-range_counter = 0
+num = 0
 
-while range_counter <= 100:
-    if range_counter % 2 != 0:
-        print(range_counter)
+while num <= 100:
+    if num % 2 != 0:
+        print(num, end=" " )
+    num += 1
