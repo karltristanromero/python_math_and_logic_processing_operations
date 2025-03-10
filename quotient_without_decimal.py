@@ -10,6 +10,6 @@ divisor = float(input("Enter the divisor: "))
 
 try:
     quotient = dividend / divisor
-    print(f"{dividend} divided by {divisor} is {int(quotient)}")
+    print(f"{dividend} divided by {divisor} is {quotient:.0f}")
 except ZeroDivisionError:
     print("You cannot divided by zero!")
