@@ -4,9 +4,15 @@
     while loop
         input num
         try-except
-            if num is less than lowest_number
+            if num is still None
+                set lowest_number into num's value
+            elif num is less than lowest_number
                 change lowest number's value with num's
-        excep Value error
+        except Value error
             break
+            
+    print(lowest_number)
 
 '''
+
+lowest_number = None
