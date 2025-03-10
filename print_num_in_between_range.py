@@ -5,8 +5,11 @@
         print num
 '''
 
-lower_boundary = int(input("Enter a boundary: "))
-upper_boundary = int(input("Enter a boundary: "))
+lower_boundary = input("Enter a boundary: ")
+upper_boundary = input("Enter a boundary: ")
+
+lower_boundary = int(float(lower_boundary))
+upper_boundary = int(float(upper_boundary))
 
 if lower_boundary > upper_boundary:
     lower_boundary, upper_boundary = upper_boundary, lower_boundary
