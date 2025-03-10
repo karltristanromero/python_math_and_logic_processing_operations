@@ -9,15 +9,16 @@
     print(list of numbers)
 
 '''
-list_of_numbers = []
+num_history = []
+num_no_duplicates = []
 
 for i in range(10):
     number = input(f"({i + 1}) Enter a number: ")
-    if number in list_of_numbers:
-        list_of_numbers.remove(number)
+
+    if number in num_history:
+        num_no_duplicates.remove(number)
     else:
-        list_of_numbers.append(number)
+        num_no_duplicates.append(number)
+        num_history.append(number)
 
-
-
-print(f"The numbers without duplicates are: {', '.join(list_of_numbers)}")
+print(f"The numbers without duplicates are: {', '.join(num_history)}")
