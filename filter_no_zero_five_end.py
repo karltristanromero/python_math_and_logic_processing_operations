@@ -7,3 +7,10 @@
             print num
         add + 1 to num
 '''
+
+num = 0
+
+while num in range(0, 100):
+    if num % 5 != 0:
+        print(num, end=" ")
+    num += 1
