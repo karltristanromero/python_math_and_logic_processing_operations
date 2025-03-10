@@ -8,6 +8,9 @@
             pop the number from list of number
     print(list of numbers)
 
+
+idea: use enumerate function and use the dictionary to store how many values were counted
+
 '''
 num_history = []
 num_no_duplicates = []
