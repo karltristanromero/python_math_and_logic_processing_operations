@@ -18,4 +18,6 @@ for i in range(10):
     else:
         list_of_numbers.append(number)
 
-print(list_of_numbers)
+
+
+print(f"The numbers without duplicates are: {list_of_numbers}")
