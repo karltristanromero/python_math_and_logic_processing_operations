@@ -10,7 +10,11 @@
         except Valueerror
             break the while loop
 
-    def value counter that accepts (index) as input
+    def value counter that accepts (list, num_to_count) as input
+        frequency = 0
+        for index in list
+            if number located in index is equal to number to be counted
+                add 1 to frequency
         return frequency of number
         
     set all numerical input in dictionary 
@@ -30,3 +34,17 @@
 
     print(list for most frequent numbers)
 '''
+
+list_of_all_nums = []
+
+while True:
+    try:
+        number = float(input("Enter a number: "))
+        list_of_all_nums.append(number)
+    except ValueError:
+        break
+
+def number_counter(number_list: list, num_to_count: float) -> int:
+    frequency = 0
+    for index in number_list:
+
