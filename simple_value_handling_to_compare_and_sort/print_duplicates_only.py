@@ -34,4 +34,4 @@ for num in list_all_nums:
     elif num in num_without_duplicates and num not in duplicate_num:
         duplicate_num.append(num)
 
-print(duplicate_num)
+print(f"The numbers with duplicates are: {duplicate_num}")
