@@ -46,5 +46,27 @@ while True:
 
 def number_counter(number_list: list, num_to_count: float) -> int:
     frequency = 0
-    for index in number_list:
+    for num in number_list:
+        if num == num_to_count:
+            frequency += 1
+    return frequency
 
+
+numerical_input_dict = {}
+
+for num in list_of_all_nums:
+    frequency_count = number_counter(list_of_all_nums, num)
+    numerical_input_dict[num] = frequency_count
+
+
+most_frequent_num = []
+num_dict_checker = {}
+
+for mode, frequency in enumerate(numerical_input_dict):
+
+    if most_frequent_num == []:
+        most_frequent_num.append(mode)
+        num_dict_checker[mode] = frequency
+
+    elif frequency > num_dict_checker[mode]: # Name Error, cannot access dictionary values, even when there are 2 or more values
+        most_frequent_num = [mode]
