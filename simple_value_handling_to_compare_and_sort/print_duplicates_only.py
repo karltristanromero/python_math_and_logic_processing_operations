@@ -12,3 +12,15 @@
     print(duplicate numbers)
 
 '''
+
+list_all_num = []
+duplicate_num = []
+
+for i in range(10):
+    number = float(input(f"({i+1}) Enter a number: "))
+    if number not in list_all_num:
+        list_all_num.append(number)
+    else:
+        duplicate_num.append(number)
+
+print(duplicate_num)
