@@ -19,11 +19,19 @@
 
 '''
 
-list_all_num = []
+list_all_nums = []
 
 for i in range(10):
     number = float(input(f"({i+1}) Enter a number: "))
-    list_all_num.append(number)
+    list_all_nums.append(number)
 
+duplicate_num = []
+num_without_duplicates = []
+
+for num in list_all_nums:
+    if num not in num_without_duplicates:
+        num_without_duplicates.append(num)
+    elif num in num_without_duplicates and num not in duplicate_num:
+        duplicate_num.append(num)
 
 print(duplicate_num)
