@@ -12,7 +12,7 @@
 list_of_num = []
 
 for i in range(10):
-    num_input = input(f"({i + 1}) Enter a number: ")
+    num_input = float(input(f"({i + 1}) Enter a number: "))
     list_of_num.append(num_input)
 
 num_without_dupli = []
@@ -27,5 +27,4 @@ for num in list_of_num:
         num_without_dupli.remove(num)
         duplicates.append(num)
 
-
-print(f"The numbers without duplicates are: {' '.join(num_without_dupli)}")
+print(f"The numbers without duplicates are: {num_without_dupli}")
