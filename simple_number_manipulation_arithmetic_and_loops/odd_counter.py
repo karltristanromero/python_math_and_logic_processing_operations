@@ -1,16 +1,15 @@
 # Prog08: Create a program that ask user to input 10 numbers. Print how many are odd numbers.
 
-'''
-    set odd_counter
-    for loop
-        input number
-        if odd (use modulo)
-            add 1 to odd_counter
-'''
+# Pseudocode
+# - set odd_counter
+# - for loop
+# - input number
+# - if odd (use modulo)
+# - add 1 to odd_counter
 
 odd_counter = 0
 
-print("\n Enter 10 numbers to start!!")
+print("Enter 10 numbers to start!!")
 
 for i in range(10):
     num = float(input(f"({i+1}) Enter a number: "))
