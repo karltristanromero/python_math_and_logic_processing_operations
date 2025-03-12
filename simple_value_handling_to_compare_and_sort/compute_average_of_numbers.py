@@ -26,6 +26,8 @@ while True:
     except ValueError:
         break
 
-average = total_sum / frequency_counter
-
-print(f"The average of your numbers is: {average}")
+if frequency_counter > 0:
+    average = total_sum / frequency_counter
+    print(f"The average of your numbers is: {average}")
+else:
+    print("Invalid input! I cannot compute for average.")
