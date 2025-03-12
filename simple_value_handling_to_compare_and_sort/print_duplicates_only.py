@@ -1,23 +1,23 @@
-# Prog01: Create a program that ask user to input 10 numbers. Display all numbers that have duplicate.
-'''
-    set list that will store all the numerical inputs
-    for loop in range 10
-        input number
-        append number to list of all numerical inputs
-    
-    set list of duplicate numbers
-    set list of num without duplicates
+# Prog01: Create a program that ask user to input 10 numbers. Display all 
+# numbers that have duplicate.
 
-    for loop in range of list of numerical inputs
-        if num not in num without duplicates
-            append num to list of num without duplicates
-        elif num in num without duplicates and num not in duplicate numbers
-            append num to list of duplicate numbers
+# - set list that will store all the numerical inputs
+# - for loop in range 10
+# - input number
+# - append number to list of all numerical inputs
 
-    
-    print(duplicate numbers)
+# - set list of duplicate numbers
+# - set list of num without duplicates
 
-'''
+# - for loop in range of list of numerical inputs
+# - if num not in num without duplicates
+# - append num to list of num without duplicates
+# - elif num in num without duplicates and num not in duplicate numbers
+# - append num to list of duplicate numbers
+
+
+# - print(duplicate numbers)
+
 
 list_all_nums = []
 
