@@ -12,3 +12,16 @@
     sort the list
     print list
 '''
+
+list_of_all_nums = []
+
+while True:
+    try:
+        number = float(input("Enter a number: "))
+        list_of_all_nums.append(number)
+    except ValueError:
+        break
+
+list_of_all_nums.sort(reverse=True)
+
+print(list_of_all_nums)
