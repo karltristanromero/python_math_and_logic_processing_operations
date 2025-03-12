@@ -62,7 +62,7 @@ for num in list_of_all_nums:
 most_frequent_num = []
 num_dict_checker = {}
 
-for mode, frequency in enumerate(numerical_input_dict):
+for mode, frequency in enumerate(numerical_input_dict): #returns mode as index
 
     if most_frequent_num == []:
         most_frequent_num.append(mode)
