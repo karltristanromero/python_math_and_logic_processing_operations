@@ -22,15 +22,16 @@
         place in a variable the return of value_counter(num)
         append num as key and return as value
     
-    set a list for most frequent number to store all modes
-    for mode, frequency enumerate the numerical input dictionary
-        if list is empty
-            initiate first mode as the number in list
-        elif mode has greater frequency than the one in the list
-            remove the one in the list
-            append the mode
-        elif mode has equal frequency with the one in the list
-            append the mode
+    set list of most frequent numbers
+    set dictionary as num_dict_value 
+
+    for loop the dictionary's numerical input using items() to return key-value
+        if most frequent numbers is empty
+            add the key to list of most freq numbers
+            add key-value pair in num_dict_value
+        elif value > greater than the value in num_dict_value
+            change list into the current key
+            change dictionary into current key-value pair
 
     print(list for most frequent numbers)
 '''
@@ -56,17 +57,4 @@ numerical_input_dict = {}
 
 for num in list_of_all_nums:
     frequency_count = number_counter(list_of_all_nums, num)
-    numerical_input_dict[num] = frequency_count
-
-
-most_frequent_num = []
-num_dict_checker = {}
-
-for mode, frequency in enumerate(numerical_input_dict): #returns mode as index
-
-    if most_frequent_num == []:
-        most_frequent_num.append(mode)
-        num_dict_checker[mode] = frequency
-
-    elif frequency > num_dict_checker[mode]: # Name Error, cannot access dictionary values, even when there are 2 or more values
-        most_frequent_num = [mode]
+    numerical_input_dict[num] = frequency_count 
