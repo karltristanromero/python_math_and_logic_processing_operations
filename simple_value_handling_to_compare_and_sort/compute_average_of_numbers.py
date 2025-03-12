@@ -18,3 +18,15 @@
 
 total_sum = 0
 frequency_counter = 0
+
+while True:
+    try:
+        number = float(input("Enter a number: "))
+        total_sum += number
+        frequency_counter += 1
+    except ValueError:
+        break
+
+average = total_sum / frequency_counter
+
+print(f"The average of your numbers is: {average}")
