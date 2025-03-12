@@ -1,12 +1,11 @@
-# Prog01: Create a program that ask user to input 2 numbers. Print the smaller number.
+# Prog01: Create a program that ask user to input 2 numbers. Print the smaller 
+# number.
 
-'''
+# Pseudocode
+# - input 2 numbers
+# - if number is smaller
+# - print number
 
-    input 2 numbers
-    if number is smaller
-        print number
-
-'''
 
 first_number = float(input("Enter the first number: "))
 second_number = float(input("Enter the second number: "))
