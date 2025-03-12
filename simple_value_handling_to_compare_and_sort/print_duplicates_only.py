@@ -15,7 +15,6 @@
 # - elif num in num without duplicates and num not in duplicate numbers
 # - append num to list of duplicate numbers
 
-
 # - print(duplicate numbers)
 
 
@@ -31,6 +30,7 @@ num_without_duplicates = []
 for num in list_all_nums:
     if num not in num_without_duplicates:
         num_without_duplicates.append(num)
+        
     elif num in num_without_duplicates and num not in duplicate_num:
         duplicate_num.append(num)
 
