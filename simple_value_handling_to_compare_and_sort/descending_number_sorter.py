@@ -24,4 +24,4 @@ while True:
 
 list_of_all_nums.sort(reverse=True)
 
-print(list_of_all_nums)
+print(f"I have sorted your numbers in descending order: {list_of_all_nums}")
