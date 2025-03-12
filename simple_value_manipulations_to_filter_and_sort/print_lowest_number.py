@@ -23,12 +23,13 @@ while True:
     try:
         num = float(input("Enter a number: "))
         
-        if lowest_number == None:
-            lowest_number = num
-        elif num < lowest_number:
+        if lowest_number is None or num < lowest_number:
             lowest_number = num
 
     except ValueError:
         break
 
-print(f"The lowest number you have entered is: {lowest_number}")
+if lowest_number is not None:
+    print(f"The lowest number you have entered is: {lowest_number}")
+else:
+    print("No valid inputs were entered.")
