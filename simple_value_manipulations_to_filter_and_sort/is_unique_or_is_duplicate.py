@@ -20,17 +20,17 @@
 # - break loop
 
 # Main Program
-list_numbers = []
+number_list = []
 
 while True:
     try:
         number = float(input("\nEnter a number: "))
 
-        if number in list_numbers:
+        if number in number_list:
             print(f"{number} is a DUPLICATE!")
 
         else:
-            list_numbers.append(number)
+            number_list.append(number)
             print(f"{number} is UNIQUE!")
 
     except ValueError:
