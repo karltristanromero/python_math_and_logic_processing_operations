@@ -7,6 +7,7 @@
         try-except
             input number
             add number to total sum
+            add 1 to frequency counter
         except ValueError
     
 # Compute for average:
@@ -14,3 +15,6 @@
 
     print average
 '''
+
+total_sum = 0
+frequency_counter = 0
