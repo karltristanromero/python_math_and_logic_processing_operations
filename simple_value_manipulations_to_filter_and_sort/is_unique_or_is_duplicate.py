@@ -4,6 +4,7 @@
 # Display "Duplicate" after input when 
 # the inputted number have duplicate.--is_unique_or_is_duplicate
 
+# Pseudocode
 # - set list_num
 # - while loop
 # - try-except
