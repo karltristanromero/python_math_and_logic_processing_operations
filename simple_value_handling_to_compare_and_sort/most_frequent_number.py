@@ -61,4 +61,4 @@ for num, frequency in num_frequency.items():
     elif frequency == highest_freq:
         most_frequent_numbers.append(num)
 
-print(f"The number/s with the highest number of duplicates is/are: {most_frequent_numbers}")
+print(f"Most frequent numbers: {most_frequent_numbers}")
