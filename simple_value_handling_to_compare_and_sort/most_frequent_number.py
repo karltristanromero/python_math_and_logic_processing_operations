@@ -10,30 +10,26 @@
         except Valueerror
             break the while loop
 
-    def value counter that accepts (list, num_to_count) as input
-        frequency = 0
-        for index in list
-            if number located in index is equal to number to be counted
-                add 1 to frequency
-        return frequency of number
-        
-    set all numerical input in dictionary 
-    for num in list of numerical inputs
-        place in a variable the return of value_counter(num)
-        append num as key and return as value
+            
+    set dictionary to count frequency of each numerical input
+    for loop the list of numerical inputs
+        if the number is already in numerical inputs
+            add 1 to the value 
+        else
+            set the num with a frequency of 1
     
-    set list of most frequent numbers
-    set dictionary as num_dict_value 
+    set list for most_frequent_numbers
+    set 0 to highest_freq for comparison
+    
+    for loop the dictionary using items() and return the number and frequency
+        if the highest_freq is still set to 0 or frequency > highest_freq
+            update most frequent numbers into the current num(key)
+            update the highest freq to the current frequency(value)
+        elif frequency is = to highest_Freq value
+            append the number to most_frequent_numbers  
+    
+    print most_frequent_numbers
 
-    for loop the dictionary's numerical input using items() to return key-value
-        if most frequent numbers is empty
-            add the key to list of most freq numbers
-            add key-value pair in num_dict_value
-        elif value > greater than the value in num_dict_value
-            change list into the current key
-            change dictionary into current key-value pair
-
-    print(list for most frequent numbers)
 '''
 
 list_of_all_nums = []
@@ -45,36 +41,4 @@ while True:
     except ValueError:
         break
 
-def number_counter(number_list: list, num_to_count: float) -> int:
-    frequency = 0
-    for num in number_list:
-        if num == num_to_count:
-            frequency += 1
-    return frequency
 
-
-numerical_input_dict = {}
-
-for num in list_of_all_nums:
-    frequency_count = number_counter(list_of_all_nums, num)
-    numerical_input_dict[num] = frequency_count 
-
-
-most_frequent_numbers = []
-value_checker = {}
-
-for mode, frequency in numerical_input_dict.items():
-    if most_frequent_numbers == []:
-        most_frequent_numbers.append(mode)
-        value_checker[mode] = frequency
-
-    elif frequency > value_checker[0]: # Problem in value checking
-        most_frequent_numbers = [mode]
-        value_checker.clear()
-        value_checker[mode] = frequency
-    
-    elif frequency == value_checker[0]: # Problem in value checking
-        most_frequent_numbers.append(mode)
-        value_checker[mode] = frequency
-
-print(most_frequent_numbers)
