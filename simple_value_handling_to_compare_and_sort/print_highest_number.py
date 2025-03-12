@@ -12,6 +12,22 @@
                     replaca highest number with the input number
         except a ValueError occurred
             break the while loop 
-            
+
     print highest_number
 '''
+
+highest_number = None
+
+while True:
+    try:
+        number = float(input("Enter a number: "))
+
+        if highest_number == None:
+            highest_number = number
+        elif number > highest_number:
+            highest_number = number
+
+    except ValueError:
+        break
+
+print(f"The highest number you have entered is: {highest_number}")
