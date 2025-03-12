@@ -1,6 +1,7 @@
 # Prog01: Create a program that ask user to input 10 numbers. Display all 
 # numbers that have duplicate.
 
+# Pseudocode
 # - set list that will store all the numerical inputs
 # - for loop in range 10
 # - input number
