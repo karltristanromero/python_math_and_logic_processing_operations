@@ -58,3 +58,23 @@ numerical_input_dict = {}
 for num in list_of_all_nums:
     frequency_count = number_counter(list_of_all_nums, num)
     numerical_input_dict[num] = frequency_count 
+
+
+most_frequent_numbers = []
+value_checker = {}
+
+for mode, frequency in numerical_input_dict.items():
+    if most_frequent_numbers == []:
+        most_frequent_numbers.append(mode)
+        value_checker[mode] = frequency
+
+    elif frequency > value_checker[0]: # Problem in value checking
+        most_frequent_numbers = [mode]
+        value_checker.clear()
+        value_checker[mode] = frequency
+    
+    elif frequency == value_checker[0]: # Problem in value checking
+        most_frequent_numbers.append(mode)
+        value_checker[mode] = frequency
+
+print(most_frequent_numbers)
