@@ -12,7 +12,7 @@
 list_of_num = []
 
 for i in range(10):
-    num_input = float(input(f"({i + 1}) Enter a number: "))
+    num_input = float(input(f"({i+1}) Enter a number: "))
     list_of_num.append(num_input)
 
 num_without_dupli = []
