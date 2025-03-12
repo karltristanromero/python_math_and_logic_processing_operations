@@ -1,12 +1,11 @@
-# Prog02: Create a program that ask user to input 2 numbers. Print "Not Equal" when the numbers are not the same.
+# Prog02: Create a program that ask user to input 2 numbers. Print "Not Equal" 
+# when the numbers are not the same.
 
-'''
+# Pseudocode
+# - input 2 numbers
+# - if the numbers are not equal
+# - print "not equal"
 
-    input 2 numbers
-    if the numbers are not equal
-        print "not equal"
-
-'''
 
 first_number = float(input("Enter the first number: "))
 second_number = float(input("Enter the second number: "))
