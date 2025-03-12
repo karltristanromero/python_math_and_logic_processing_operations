@@ -42,3 +42,23 @@ while True:
         break
 
 
+num_frequency = {}
+
+for num in list_of_all_nums:
+    if num in num_frequency:
+        num_frequency[num] += 1
+    else:
+        num_frequency[num] = 1
+
+
+most_frequent_numbers = []
+highest_freq = 0
+
+for num, frequency in num_frequency.items():
+    if highest_freq == 0 or frequency > highest_freq:
+        most_frequent_numbers = [num]
+        highest_freq = frequency
+    elif frequency == highest_freq:
+        most_frequent_numbers.append(num)
+
+print(f"The number/s with the highest number of duplicates is/are: {most_frequent_numbers}")
